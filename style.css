@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
 }
 
 .main {
@@ -24,21 +25,23 @@ body {
   height: 70vh;
   width: 60vw;
   background-color: white;
+  border-radius: 10px;
 }
 
 .pic {
   width: 30vw;
-  height: 40vh;
+
 }
 
 .right {
   width: 50vw;
+  height: 50vh;
 }
 
 .left {
   width: 50vw;
   position: relative;
-  margin-left: -9.5vw;
+  margin-left: -8vw;
 }
 
 .right span {
@@ -47,22 +50,20 @@ body {
 }
 
 .item {
-  font-size: 11px;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  width: 30vw;
+  padding: 1.5vh 0;
 }
 
 .answer {
-  border-bottom: 1px solid gray;
   width: 30vw;
   display: none;
 }
 
 .question {
-  border-bottom: 1px solid gray;
-  width: 30vw;
-}
-
-.question span {
-  border: blue solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .appear {
@@ -71,4 +72,53 @@ body {
 
 .upSideDown {
   transform: rotate(180deg);
+}
+
+.fontWeight {
+  font-weight: bold;
+}
+
+.question:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    position: absolute;
+    top: 2vh;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 54vh;
+    margin-top: 10vh;
+  }
+
+  .pic {
+    width: 45vw;
+  }
+
+  .right span {
+    font-size: 27px;
+  }
+
+  .item {
+    width: 50vw;
+  }
+  .answer {
+    width: 46vw;
+  }
 }
