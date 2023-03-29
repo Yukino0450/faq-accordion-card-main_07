@@ -38,4 +38,37 @@ body {
 .left {
   width: 50vw;
   position: relative;
+  margin-left: -9.5vw;
+}
+
+.right span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.item {
+  font-size: 11px;
+}
+
+.answer {
+  border-bottom: 1px solid gray;
+  width: 30vw;
+  display: none;
+}
+
+.question {
+  border-bottom: 1px solid gray;
+  width: 30vw;
+}
+
+.question span {
+  border: red solid 1px;
+}
+
+.appear {
+  display: block;
+}
+
+.upSideDown {
+  transform: rotate(180deg);
 }
