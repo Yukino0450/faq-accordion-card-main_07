@@ -16,6 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  font-family: "Karla", sans-serif;
 }
 
 .main {
@@ -30,7 +31,6 @@ body {
 
 .pic {
   width: 30vw;
-
 }
 
 .right {
@@ -86,7 +86,6 @@ body {
 @media only screen and (max-width: 600px) {
   .main {
     flex-direction: column;
-
   }
 
   .left {
